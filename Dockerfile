@@ -5,7 +5,7 @@ MAINTAINER  Lucas Augusto <nortthon@gmail.com>
 ADD apache-tomcat-5.5.26.tar.gz /opt
 RUN mv /opt/apache-tomcat-5.5.26 /opt/tomcat
 
-ADD start.sh /opt/tomcat/bin/
+ADD start.sh /opt/tomcat/
 
 VOLUME ["/opt/tomcat/webapps"]
 
@@ -18,4 +18,4 @@ ENV PATH $PATH:$CATALINA_HOME/bin
 
 EXPOSE 8080
 
-CMD /opt/tomcat/bin/start.sh
+CMD /opt/tomcat/start.sh
