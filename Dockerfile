@@ -1,4 +1,4 @@
-FROM nortthon/java5:latest
+FROM java:6-jre
 MAINTAINER  Lucas Augusto <nortthon@gmail.com>
 
 # Local Tomcat 5.5.26
